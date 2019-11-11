@@ -1,0 +1,75 @@
+/* Website Template by freewebsitetemplates.com */
+body {
+	min-width: 0;
+}
+#header {
+	padding: 10px 0 40px;
+	position: relative;
+	width: 100%;
+}
+#header a.logo img {
+	width: 33%;
+}
+#body {
+	width: 100%;
+}
+#body > div {
+	padding: 0 5%;
+	width: 90%;
+}
+#body #featured {
+	overflow: hidden;
+	margin: 0;
+}
+#body #featured img {
+	width: 100%;
+}
+#interest-form { /*button*/
+    background-color: #339933;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    margin: 15px 0 15px;
+    padding: 15px 20px 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 66%;
+}
+#body > ul {
+    margin: 0 5px 0;
+	overflow: visible;
+	padding: 0 8%;
+	width: 85%;
+}
+#body > ul li {
+	float: none;
+	margin: 0;
+	width: 85%;
+}
+#body div ul {
+	margin: 0;
+	padding: 20px 0 0;
+	width: 100%;
+}
+#body div ul li {
+	overflow: visible;
+	padding: 0 0 20px;
+	width: 50%;
+}
+#footer {
+	padding: 10px 0 25px;
+}
+#footer div {
+	overflow: visible;
+	width: 100%;
+}
+#footer div p {
+	float: none;
+	margin: 0;
+	text-align: center;
+}
+#footer div ul {
+	float: none;
+	margin: 0 auto;
+	width: 256px;
+}
