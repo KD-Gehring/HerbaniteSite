@@ -81,12 +81,40 @@ p a:hover {
 	padding: 24px 10px 0;
 	width: 940px;
 }
-/*featured is the main splash image*/
+/*featured is the main splash image (slideshow)*/
 #body #featured {
 	margin: 10px 0 13px;
 	padding: 0;
 	position: relative;
 	width: 100%;
+}
+/*hide the 3 images, show them using javascript*/
+.slideshow {
+    display: none;
+}
+
+/*next and prev buttons*/
+.prev, .next {
+    position: absolute;
+    top: 47%;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0 5px 5px 0;
+    padding: 18px;
+    transition: 0.8s ease;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 5px 0 5px;
+}
+.prev {
+    left: 0;
+    border-radius: 5px 0 5px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(195, 198, 194, 0.7);
 }
 #body #featured img {
 	border: 0;
@@ -112,13 +140,19 @@ p a:hover {
 	padding: 24px 0 0;
 	width: 960px;
 }
+
 #body > ul li {
-	display: block;
-	float: left;
-	margin: 0 10px 20px;
-	padding: 12px;
-	width: 270px;
+    display: block;
+    float: left;
+    margin: 0 10px 20px;
+    padding: 12px;
+    width: 270px;
     border-style: solid;
+    color: #707070;
+}
+
+.active, .slideshow-text:hover {
+    color: black !important; /*TODO: use of important not ideal*/
 }
 
 #body form {

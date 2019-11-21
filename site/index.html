@@ -7,7 +7,7 @@
 	<title>Herbanite</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
-	<script type="text/javascript" src="js/mobile.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -31,25 +31,37 @@
 		</ul>-->
 	</div>
     <div id="body">
+        <!--"SLIDESHOW"-->
         <div id="featured">
-            <img src="images/header.jpg" alt="Herbanite presents: Living Wall with rendered image of the product">
-    </div>
+            <div class="slideshow">
+                <img src="images/header.jpg" alt="Herbanite presents: Living Wall with rendered image of the product">
+            </div>
+            <div class="slideshow">
+                <img src="images/headertest2.png" alt="second header in theory">
+            </div>
+            <div class="slideshow">
+                <img src="images/headertest3.png" alt="third header in theory">
+            </div>
+
+            <!-- Buttons for slidshow-->
+            <a class="prev" onclick="shiftSlideshow(-1)">&#10094;</a>
+            <a class="next" onclick="shiftSlideshow(1)">&#10095;</a>
+        </div>
         <div>
             <a id="interest-form" href="https://docs.google.com/forms/d/e/1FAIpQLSccoVg1PvBiXgitgKjMiRueC3xGvcUDSrM5ms-GMIoRa-9LaA/viewform?usp=sf_link" class="more">Want product updates? Sign up here</a>
         </div>
 		<ul>
-			<li>
-				<h2>Beautiful</h2>
-                <p>We think plants deserve a place alongside art, so our designs bring out the best in your plants, and use materials that will stand out in your restaurant.</p>
-			</li>
-            <li>
-                <h2>Automated<br /> and IOT-enabled</h2>
-                <p>Black thumb? No problem! We take care of watering and lighting. You just need to tweak the schedule, harvest the greens, and occasionally replace the trays.</p>
+            <li class="slideshow-text" onclick="currentSlide(3)">
+                <h2>Automated</h2>
+                <p>Never kill your basil again! We make sure your plants have the perfect amount of light and water, and on a schedule that works for you.</p>
             </li>
-			<li>
+            <li class="slideshow-text" onclick="currentSlide(1)">
+                <h2>Aesthetic</h2>
+                <p>We believe plants are art for the 21st century, so we make sure you can put them in any room.</p>
+            </li>
+			<li class="slideshow-text" onclick="currentSlide(2)">
                  <h2>Practical</h2>
-                 <p>A beautiful display which produces fresh oxygen and food -- what more could you ask for from a single product?</p>
-
+                 <p>Refresh your atmosphere - the benefits of live plants include noise dampening, fresher air, and food that travelled feet to your plate, not miles.</li>
 			</li>
 		</ul>
 	</div>
